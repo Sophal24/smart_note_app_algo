@@ -67,7 +67,9 @@ notes_win.setLayout(layout_notes)
 
 #App functionality
 
+#########################
 #Working with note text
+#########################
 def add_note():
     note_name, ok = QInputDialog.getText(notes_win, "Add note", "Note name: ")
     if ok and note_name != "":
@@ -110,7 +112,7 @@ def del_note():
         print("Note to delete is not selected!")
 
 #########################
-#Working with note tags
+# Working with note tags
 #########################
 def add_tag():
     if list_notes.selectedItems():
